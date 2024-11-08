@@ -1,5 +1,5 @@
 {
-  "name": "sooky-api",
+  "name": "sooky",
   "version": "1.0.0",
   "description": "An API to build online business",
   "main": "index.js",
