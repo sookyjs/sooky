@@ -42,7 +42,7 @@
     "passport-http-bearer": "^1.0.1",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
-    "sooky-interfaces": "github:sookyjs/sooky-interfaces",
+    "sooky-interfaces": "github:sookyjs/sooky-interfaces#main",
     "winston": "^3.11.0"
   },
   "devDependencies": {
