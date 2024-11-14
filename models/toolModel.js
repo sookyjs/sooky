@@ -1,16 +1,17 @@
-import { BaseModel } from 'sooky-interfaces';
+import { BaseModel } from 'sooky-interfaces/src/models/BaseModel.js';
 
 class ToolModel extends BaseModel {
-  // Définissez le modelName de base
-  static modelName = "Tool";
+    static modelName = "Tool";
 
-  // Définissez un schéma générique si nécessaire
-  static schema = {
-    createdAt: {
-      type: Date,
-      default: Date.now
+    static schema = {
+        name: { type: String, required: true },
+        type: { type: String, required: true },
+        // ... autres champs ...
+    };
+
+    constructor() {
+        super(ToolModel.schema); // Passe le schéma au constructeur de BaseModel
     }
-  };
 }
 
-export default ToolModel;
+export default new ToolModel().getModel(); // Exporte le modèle Mongoose prêt à l'emploi
